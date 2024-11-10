@@ -2,6 +2,7 @@
 
 echo "Enter the name of the user you want to add"
 read userToAdd
+
 if id "$userToAdd" &>/dev/null; then
 	echo "User already exists, choose a different name."
 	while true; do
